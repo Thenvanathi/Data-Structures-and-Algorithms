@@ -1,0 +1,21 @@
+// Write to program accepts the age of the user, whether the user is eligible to case vote 
+// Age if supposed to be Greater than or equal to 18
+// Conditional Statement -> Make Dicision 
+// If age is greater than or equal to 18 , then they can vote 
+// Relational Operators ===> >=, <=, >, <, ==, !=
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        System.out.println("Enter Input");
+        Scanner scan = new Scanner(System.in);
+        int num = scan.nextInt();
+        
+        if(num>=18){
+            System.out.println("Eligiable to Vote");
+        } else {
+            System.out.println("Not Eligiable to Vote");
+        }
+    }
+}

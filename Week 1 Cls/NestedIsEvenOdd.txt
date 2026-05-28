@@ -1,0 +1,25 @@
+// Nested If
+// Write a Program to find if a number is Positive 
+// If Positive, find if it is even or odd.
+// Any number divisible by 2 is even. 
+// % Modulo -> Remainder 
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        System.out.println("Enter Input");
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        
+        if(a>0){
+            if(a%2 == 0){
+                System.out.println("Even & Positive Number");
+            } else {
+                System.out.println("Odd & Negative Number");
+            }
+        } else {
+            System.out.println("Negative Number");
+        }
+    }
+}

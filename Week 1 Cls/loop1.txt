@@ -1,0 +1,11 @@
+// Loops - Perform Something repeatedly 
+// To Print from 1 to 100 only multiply of 5 
+
+class Main{
+    public static void main(String[] args){
+        for(int i=0; i<=100; i+=5){
+            System.out.println(i);
+        }
+    }
+}
+
