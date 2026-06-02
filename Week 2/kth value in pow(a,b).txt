@@ -1,0 +1,19 @@
+// User function Template for Java
+
+class Solution {
+    static long kthDigit(int a, int b, int k) {
+        long power = (long)Math.pow(a,b);
+        long i = 1;
+        
+        while(power>0){
+            long ans = power%10;
+            
+            while(i == k){
+                return ans;
+            }
+            i++;
+            power = power/10;
+        }
+        return 0;
+    }
+}

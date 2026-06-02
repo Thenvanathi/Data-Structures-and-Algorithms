@@ -1,0 +1,20 @@
+// find the sum of first and last digit of N.
+
+class Main{
+    public static void main(String[] args){
+        int n = 98562; 
+
+        if(n < 10){
+            return n;
+        }
+        
+        int ld = n%10;
+        int fd=0;
+        
+        while(n>0){
+            fd = n%10;
+            n = n/10;
+        }
+        System.out.println(fd + ld);
+    }
+}

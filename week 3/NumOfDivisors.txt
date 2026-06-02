@@ -1,0 +1,20 @@
+// User function Template for Java
+class Solution {
+    static int countDivisors(int n) {
+        int count = 0;
+
+       for(int i=1; i<=Math.sqrt(n); i++){
+           int k = n/i;
+           if(n%i == 0){
+               if(i % 3 == 0){
+                   count++;
+               }
+               if(k % 3 == 0 && k != i){
+                   count++;
+               }
+           }
+       }
+       return count;
+        
+    }
+}

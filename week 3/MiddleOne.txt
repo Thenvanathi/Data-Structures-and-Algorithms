@@ -1,0 +1,15 @@
+// Middle One 
+
+class Main{
+    public static void main(String[] args){
+     int a = 978, b = 518, c = 300;
+     
+     if(a>b && a<c || a<b && a>c){
+         System.out.println("a " + a);
+     } else if(b>a && b<c || b<a && b>c){
+         System.out.println("b " + b);
+     } else {
+         System.out.println("c " + c);
+     }
+    }
+}
